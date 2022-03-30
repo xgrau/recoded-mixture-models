@@ -1,0 +1,171 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Mar 23 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    mini (AVX2, FMA3, 7 GB RAM)
+Command: iqtree -s test_data/test.recDayhoff6.fasta -m xmC10Dayhoff6 -mdef recoded_models/xmC10Dayhoff6.nex
+Seed:    84920 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Mar 30 17:43:39 2022
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file test_data/test.recDayhoff6.fasta ... Fasta format detected
+Alignment most likely contains 6-state morphological data
+Alignment has 16 sequences with 1000 columns, 579 distinct patterns
+334 parsimony-informative, 166 singleton sites, 500 constant sites
+        Gap/Ambiguity  Composition  p-value
+   1  Hsap      1.30%    passed     91.19%
+   2  Bralan    9.90%    passed     82.97%
+   3  Spur      1.40%    passed     96.52%
+   4  Skow     10.70%    passed     98.63%
+   5  Tcas      2.10%    passed     84.50%
+   6  Polpol    8.30%    passed     70.28%
+   7  Cscu     21.40%    passed     49.93%
+   8  Ctel     16.70%    passed     69.53%
+   9  Cgig      1.60%    passed     99.72%
+  10  Acagra    4.70%    passed     89.41%
+  11  Exapal    0.80%    passed     99.62%
+  12  Nvec      4.40%    passed     88.47%
+  13  Adig     15.10%    passed     64.36%
+  14  Amil     12.10%    passed     94.94%
+  15  Gfas      2.00%    passed     96.98%
+  16  Fspp      9.70%    passed     79.01%
+****  TOTAL     7.64%  0 sequences failed composition chi2 test (p-value<5%; df=5)
+Reading model definition file recoded_models/xmC10Dayhoff6.nex ... 70 models and 224 frequency vectors loaded
+Reading model definition file recoded_models/xmC10Dayhoff6.nex ... 70 models and 224 frequency vectors loaded
+Creating fast initial parsimony tree by random order stepwise addition...
+0.001 seconds, parsimony score: 1426 (based on 500 sites)
+Model xmC10Dayhoff6 is alias for GTR+G+FMIX{C10Dayhoff6_C10pi1,C10Dayhoff6_C10pi2,C10Dayhoff6_C10pi3,C10Dayhoff6_C10pi4,C10Dayhoff6_C10pi5,C10Dayhoff6_C10pi6,C10Dayhoff6_C10pi7,C10Dayhoff6_C10pi8,C10Dayhoff6_C10pi9,C10Dayhoff6_C10pi10}
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+WARNING: GTR multistate model will estimate 14 substitution rates that might be overfitting!
+WARNING: Please only use GTR with very large data and always test for model fit!
+
+NOTE: 17 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -8762.630
+2. Current log-likelihood: -8128.039
+3. Current log-likelihood: -8100.045
+4. Current log-likelihood: -8092.350
+5. Current log-likelihood: -8092.025
+Optimal log-likelihood: -8091.967
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.597 2.882 3.223 0.354 0.546 5.532 1.488 0.404 0.369 1.342 0.964 0.502 1.281 0.686 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Mixture weights: 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100
+Gamma shape alpha: 0.426
+Parameters optimization took 5 rounds (2.788 sec)
+Computing ML distances based on estimated model parameters... 0.003 sec
+Computing BIONJ tree...
+0.000 seconds
+Log-likelihood of BIONJ tree: -8096.425
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.072 second
+Computing log-likelihood of 98 initial trees ... 6.414 seconds
+Current best score: -8087.265
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -8086.392
+Iteration 10 / LogL: -8086.392 / Time: 0h:0m:12s
+Iteration 20 / LogL: -8086.392 / Time: 0h:0m:16s
+Finish initializing candidate tree set (2)
+Current best tree score: -8086.392 / CPU time: 13.723
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -8086.457 / Time: 0h:0m:20s (0h:0m:50s left)
+Iteration 40 / LogL: -8086.410 / Time: 0h:0m:25s (0h:0m:40s left)
+Iteration 50 / LogL: -8086.395 / Time: 0h:0m:31s (0h:0m:32s left)
+Iteration 60 / LogL: -8086.419 / Time: 0h:0m:36s (0h:0m:25s left)
+Iteration 70 / LogL: -8086.396 / Time: 0h:0m:41s (0h:0m:18s left)
+Iteration 80 / LogL: -8086.408 / Time: 0h:0m:47s (0h:0m:12s left)
+Iteration 90 / LogL: -8086.393 / Time: 0h:0m:53s (0h:0m:6s left)
+Iteration 100 / LogL: -8086.431 / Time: 0h:0m:59s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:1m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -8086.392
+2. Current log-likelihood: -8086.247
+Optimal log-likelihood: -8086.269
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Rate parameters: 7.628 2.945 3.156 0.332 0.515 5.508 1.475 0.408 0.342 1.295 0.973 0.503 1.250 0.698 1.000
+State frequencies: 0.167 0.167 0.167 0.167 0.167 0.167
+Mixture weights: 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100 0.100
+Gamma shape alpha: 0.425
+Parameters optimization took 2 rounds (0.311 sec)
+BEST SCORE FOUND : -8086.269
+Total tree length: 1.605
+
+Total number of iterations: 102
+CPU time used for tree search: 57.521 sec (0h:0m:57s)
+Wall-clock time used for tree search: 57.766 sec (0h:0m:57s)
+Total CPU time used: 60.772 sec (0h:1m:0s)
+Total wall-clock time used: 61.030 sec (0h:1m:1s)
+
+Analysis results written to: 
+  IQ-TREE report:                test_data/test.recDayhoff6.fasta.iqtree
+  Maximum-likelihood tree:       test_data/test.recDayhoff6.fasta.treefile
+  Likelihood distances:          test_data/test.recDayhoff6.fasta.mldist
+  Screen log file:               test_data/test.recDayhoff6.fasta.log
+
+Date and Time: Wed Mar 30 17:44:40 2022

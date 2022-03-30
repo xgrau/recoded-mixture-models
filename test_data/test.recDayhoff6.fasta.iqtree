@@ -1,0 +1,110 @@
+IQ-TREE 1.6.12 built Mar 23 2020
+
+Input file name: test_data/test.recDayhoff6.fasta
+Type of analysis: tree reconstruction
+Random seed number: 84920
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 16 sequences with 1000 morphological sites
+Number of constant sites: 500 (= 50% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 500 (= 50% of all sites)
+Number of parsimony informative sites: 334
+Number of distinct site patterns: 579
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: xmC10Dayhoff6+G4
+
+  No  Component      Rate    Weight   Parameters
+   1  GTR+FC10Dayhoff6_C10pi1  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi1{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+   2  GTR+FC10Dayhoff6_C10pi2  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi2{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+   3  GTR+FC10Dayhoff6_C10pi3  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi3{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+   4  GTR+FC10Dayhoff6_C10pi4  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi4{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+   5  GTR+FC10Dayhoff6_C10pi5  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi5{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+   6  GTR+FC10Dayhoff6_C10pi6  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi6{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+   7  GTR+FC10Dayhoff6_C10pi7  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi7{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+   8  GTR+FC10Dayhoff6_C10pi8  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi8{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+   9  GTR+FC10Dayhoff6_C10pi9  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi9{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+  10  GTR+FC10Dayhoff6_C10pi10  1.0000   0.1000   GTR+FC10Dayhoff6_C10pi10{7.6276,2.94508,3.15556,0.331595,0.514911,5.50761,1.47488,0.408028,0.341773,1.2953,0.973463,0.502848,1.25038,0.697533,1}+FU
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.4250
+
+ Category  Relative_rate  Proportion
+  1         0.0205         0.2500
+  2         0.2001         0.2500
+  3         0.7569         0.2500
+  4         3.0224         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -8086.2688 (s.e. 214.9251)
+Unconstrained log-likelihood (without tree): -5719.9416
+Number of free parameters (#branches + #model parameters): 179
+Akaike information criterion (AIC) score: 16530.5377
+Corrected Akaike information criterion (AICc) score: 16609.1230
+Bayesian information criterion (BIC) score: 17409.0259
+
+Total tree length (sum of branch lengths): 1.6055
+Sum of internal branch lengths: 0.3359 (20.9247% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Hsap' is drawn at root
+
++-------------------------------Hsap
+|
+|  +-------------Bralan
++--|
+|  +-----------------------------------Spur
+|
+|      +---------------------Skow
+|   +--|
+|   |  |               +-------------Tcas
+|   |  |         +-----|
+|   |  |         |     +----------------------------------Polpol
+|   |  |  +------|
+|   |  |  |      +---------------Cscu
+|   |  +--|
+|   |     |  +-----------------------Ctel
+|   |     +--|
+|   |        |  +-------------Cgig
+|   |        +--|
+|   |           +-------------Acagra
++---|
+    |                     +---------Exapal
+    |                  +--|
+    |                  |  +------Nvec
+    +------------------|
+                       |              +--Adig
+                       |          +---|
+                       |          |   +--Amil
+                       |       +--|
+                       |       |  +--Gfas
+                       +-------|
+                               +-------Fspp
+
+Tree in newick format:
+
+(Hsap:0.1578476961,(Bralan:0.0716872211,Spur:0.1760256854):0.0089675444,((Skow:0.1099592348,(((Tcas:0.0728266261,Polpol:0.1729898029):0.0327837401,Cscu:0.0822109097):0.0368102434,(Ctel:0.1178641871,(Cgig:0.0712688791,Acagra:0.0689949714):0.0147445582):0.0145511896):0.0182827577):0.0106012318,((Exapal:0.0495796702,Nvec:0.0363635509):0.0183105875,(((Adig:0.0170163085,Amil:0.0079470091):0.0202484732,Gfas:0.0157355629):0.0045491271,Fspp:0.0411986492):0.0396850004):0.0952627916):0.0211381994);
+
+TIME STAMP
+----------
+
+Date and time: Wed Mar 30 17:44:40 2022
+Total CPU time used: 60.7723 seconds (0h:1m:0s)
+Total wall-clock time used: 61.0316 seconds (0h:1m:1s)
+
