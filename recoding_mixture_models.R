@@ -55,9 +55,8 @@ recoding_dictionary = list(
 
 for (model in model_list) {
   
-  
   # read model
-  mod_fn = sprintf(sprintf("models_iqtree_%s.txt", model))
+  mod_fn = sprintf(sprintf("data/models_iqtree_%s.txt", model))
   mod = read.table(mod_fn, fill = TRUE)
   
   # get nexus final line and drop from table
@@ -115,7 +114,7 @@ for (model in model_list) {
     nex_o = sprintf("model xm%s%s = GTR+G+FMIX{%s} ;", model, dic, nex_o_string)
     
     # write nexus
-    nex_fn = sprintf("xm%s%s.nex", model, dic)
+    nex_fn = sprintf("recoded_models/xm%s%s.nex", model, dic)
     write("#nexus",        file = nex_fn)
     write("begin models ;", file = nex_fn, append = TRUE)
     for (i in 1:nrow(nex_m)) {
@@ -128,3 +127,4 @@ for (model in model_list) {
   }
   
 }
+
