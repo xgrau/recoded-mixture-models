@@ -109,12 +109,23 @@ for (model in model_list) {
     nex_m = mon_r_norm
     rownames(nex_m) = sprintf("frequency %s%s_%s = ", model, dic, rownames(mon_r_norm))
 
-    # output final string (no weights given)
+    # write nexus for GTR
     nex_o_string = paste(sprintf("%s%s_%s", model, dic, rownames(mon_r_norm)), collapse = ",")
     nex_o = sprintf("model xm%s%s = GTR+G+FMIX{%s} ;", model, dic, nex_o_string)
-    
-    # write nexus
     nex_fn = sprintf("recoded_models/xm%s%s.nex", model, dic)
+    write("#nexus",        file = nex_fn)
+    write("begin models ;", file = nex_fn, append = TRUE)
+    for (i in 1:nrow(nex_m)) {
+      cat_s = sprintf("%s %s ;", rownames(nex_m)[i], paste(nex_m[i,], collapse = " "))
+      write(cat_s, file = nex_fn, append = TRUE)
+    }
+    write(nex_o, file = nex_fn, append = TRUE)
+    write("end ;", file = nex_fn, append = TRUE)
+    
+    # write nexus for Poisson
+    nex_o_string = paste(sprintf("%s%s_%s", model, dic, rownames(mon_r_norm)), collapse = ",")
+    nex_o = sprintf("model xmPoi%s%s = Poisson+G+FMIX{%s} ;", model, dic, nex_o_string)
+    nex_fn = sprintf("recoded_models/xmPoi%s%s.nex", model, dic)
     write("#nexus",        file = nex_fn)
     write("begin models ;", file = nex_fn, append = TRUE)
     for (i in 1:nrow(nex_m)) {
